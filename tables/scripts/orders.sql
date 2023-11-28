@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS public.orders
     user_id integer,
     order_date timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
     total_amount numeric(10,2) NOT NULL,
+    desc_p character varying(10),
     CONSTRAINT orders_pkey PRIMARY KEY (order_id),
     CONSTRAINT orders_user_id_fkey FOREIGN KEY (user_id)
         REFERENCES public.users (user_id) MATCH SIMPLE
