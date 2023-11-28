@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS public.products
     price numeric(10,2) NOT NULL,
     stock_quantity integer NOT NULL,
     category_id integer NOT NULL,
+    typeId integer NOT NULL,
     CONSTRAINT products_pkey PRIMARY KEY (product_id)
 )
 
