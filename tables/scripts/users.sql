@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS public.users
     email character varying(100) COLLATE pg_catalog."default" NOT NULL,
     password_hash character varying(100) COLLATE pg_catalog."default" NOT NULL,
     registration_date timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    desc_a character varying(100),
     CONSTRAINT users_pkey PRIMARY KEY (user_id),
     CONSTRAINT users_email_key UNIQUE (email),
     CONSTRAINT users_username_key UNIQUE (username)
