@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS public.customers
     customer_name character varying(100) COLLATE pg_catalog."default" NOT NULL,
     contact_number character varying(15) COLLATE pg_catalog."default",
     address text COLLATE pg_catalog."default",
+    house_no character varying(15),
     CONSTRAINT customers_pkey PRIMARY KEY (customer_id)
 )
 
