@@ -9,7 +9,8 @@
 CREATE TABLE IF NOT EXISTS public.Roles
 (
     Id integer NOT NULL,
-    Name character varying(50) COLLATE pg_catalog."default" NOT NULL
+    Name character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    ModuleId integer NOT NULL
 )
 
 TABLESPACE pg_default;
