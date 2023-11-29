@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS public.blog_posts
     content text COLLATE pg_catalog."default",
     author_id integer,
     auther_name character varying(255),
-auther_name character varying(255),
+
     publish_date timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT blog_posts_pkey PRIMARY KEY (post_id),
     CONSTRAINT blog_posts_author_id_fkey FOREIGN KEY (author_id)

@@ -13,7 +13,9 @@ CREATE OR REPLACE VIEW public.order_details
     o.total_amount,
     u.username AS customer_username
    FROM orders o
-     JOIN users u ON o.user_id = u.user_id;
+     JOIN users u ON o.user_id = u.user_id
+	 
+where 1 =2 ;
 
 ALTER TABLE public.order_details
     OWNER TO postgres;
