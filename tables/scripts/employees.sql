@@ -11,7 +11,6 @@ CREATE TABLE IF NOT EXISTS public.employees
     first_name character varying(50) COLLATE pg_catalog."default" NOT NULL,
     last_name character varying(50) COLLATE pg_catalog."default" NOT NULL,
     hire_date date,
-     leaving_date date,
     "position" character varying(50) COLLATE pg_catalog."default",
     CONSTRAINT employees_pkey PRIMARY KEY (employee_id)
 )
