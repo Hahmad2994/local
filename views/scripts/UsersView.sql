@@ -10,7 +10,7 @@ CREATE OR REPLACE VIEW public.UsersView
  AS
  
  select * 
- from Users u
+ from Users u;
 
 ALTER TABLE public.UsersView
     OWNER TO postgres;
