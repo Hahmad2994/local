@@ -15,7 +15,7 @@ CREATE OR REPLACE VIEW public.order_details
    FROM orders o
      JOIN users u ON o.user_id = u.user_id
 	 
-where 1=4 ;
+where 1=5;
 
 
 ALTER TABLE public.order_details
